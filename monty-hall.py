@@ -2,12 +2,16 @@ import random
 
 WinCount = 0
 
+rounds = 5000
+
+
 def GameGenerator():
     doors = ["goat", "goat", "car"]
 
     random.shuffle(doors)
 
     return doors
+
 
 def PickLogic(game):
     PlayerChoice = random.randint(0, len(game) - 1)
@@ -31,7 +35,6 @@ def PickLogic(game):
     else:
         print("you lose!")
 
-rounds = 5000
 
 for x in range(rounds):
     PickLogic(GameGenerator())
