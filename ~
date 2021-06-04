@@ -1,0 +1,18 @@
+import random
+
+def GameGenerator():
+    doors = ["goat", "goat", "car"]
+
+    random.shuffle(doors)
+
+    return doors
+
+def PickLogic(rounds: int, game: list):
+    
+    for x in range(rounds):
+        ListIndex = game.index
+        print(ListIndex)
+    
+
+PickLogic(5, GameGenerator())
+
